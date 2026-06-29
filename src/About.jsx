@@ -1,3 +1,5 @@
+import { Outlet } from "react-router-dom";
+
 function About() {
     return (
         <div className='flex flex-col items-center justify-center min-h-screen bg-gray-50'>
@@ -7,6 +9,13 @@ function About() {
             <p
                 className="text-gray-700 mt-4 text-lg"
                 >This page provides information about us. Learn more about our mission, value, etc.</p>
+        <div className="mt-8 w-full max-w-4xl">
+            <Outlet />
+
+
+        </div>
+        
+        
         </div>
     );
 }
