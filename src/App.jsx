@@ -22,6 +22,11 @@ function App(){
           <li><Link 
             className='text-white hover:text-yellow-300 font-medium transition duration-300'
             to="/contact">Contact</Link></li>
+          
+          <li><button 
+            className='text-white hover:text-yellow-300 font-medium transition duration-300'
+            to="/contact">Contact</button></li>
+        
         </ul>
       </nav>
 
@@ -36,7 +41,9 @@ function App(){
           </Route>
 
           <Route path='/contact' element ={<Contact/>} /> 
+          <Route path='/dashboard' element={<Dashboard/>} />
           <Route path='*' element={<NotFound/>} />
+
         </Routes>
       </div>
       </div>
